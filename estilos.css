@@ -28,9 +28,10 @@ header p {
 
 /* Contenedor Principal */
 main {
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 0 20px;
+    width: 90%;             /* Usa el 90% del ancho de la pantalla */
+    max-width: 1150px;      /* Cambia el límite antiguo (ej. 800px) por 1150px o 1200px */
+    margin: 0 auto;         /* Mantiene todo centrado en la pantalla */
+    padding: 20px;
 }
 
 /* Secciones / Tarjetas */
@@ -121,4 +122,212 @@ footer {
 .btn-facebook:hover {
     background-color: #166fe5;
     text-decoration: none;
+}
+
+/* --- SECCIÓN DE COMPARATIVAS --- */
+.tarjeta-comparativa {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;              /* Espacio cómodo entre el manuscrito y el LaTeX */
+    width: 100%;            /* Ocupa todo el ancho disponible del contenedor */
+}
+
+.bloque-muestra {
+    flex: 1;
+    min-width: 300px;       /* Si la pantalla mide más de 600px, se pondrán lado a lado */
+}
+
+.bloque-muestra img {
+    width: 100%;
+    max-width: 100%;        /* Deja que la imagen aproveche todo el ancho del bloque */
+    height: auto;
+}hhh
+
+.etiqueta {
+    display: inline-block;
+    padding: 6px 12px;
+    font-size: 0.9em;
+    font-weight: bold;
+    border-radius: 4px;
+    color: #ffffff;
+}
+
+.etiqueta.borrador {
+    background-color: #e67e22; /* Naranja para el manuscrito */
+}
+
+.etiqueta.latex {
+    background-color: #27ae60; /* Verde para el resultado final */
+}
+.bloque-muestra img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    object-fit: contain;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    margin-top: 10px;
+}
+/* --- BORDES Y EFECTOS PARA LAS MUESTRAS --- */
+.bloque-muestra img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    object-fit: contain;
+    border: 2px solid #e2e8f0;
+    border-radius: 12px;
+    margin-top: 12px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efecto al pasar el ratón */
+.bloque-muestra img:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    border-color: #0076d6;
+}
+
+
+/* --- TABLA DE TARIFAS --- */
+.tabla-precios {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.tabla-precios th, .tabla-precios td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.tabla-precios th {
+    background-color: #1a365d;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.tabla-precios tr:hover {
+    background-color: #f7fafc;
+}
+
+/* --- BOTÓN DE COTIZACIÓN RÁPIDA --- */
+.btn-cotizar {
+    display: inline-block;
+    background-color: #25d366;
+    color: #ffffff;
+    padding: 14px 24px;
+    font-size: 1.1em;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 8px;
+    margin-top: 10px;
+    box-shadow: 0 4px 10px rgba(37, 211, 102, 0.3);
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.btn-cotizar:hover {
+    background-color: #1ebc57;
+    transform: translateY(-2px);
+}
+
+/* --- TESTIMONIOS --- */
+.tarjeta-testimonio {
+    background-color: #ffffff;
+    border-left: 4px solid #0076d6;
+    padding: 18px;
+    margin-top: 15px;
+    border-radius: 0 8px 8px 0;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.tarjeta-testimonio p {
+    font-style: italic;
+    color: #4a5568;
+    margin-bottom: 8px;
+}
+
+.tarjeta-testimonio span {
+    font-weight: bold;
+    color: #2d3748;
+    font-size: 0.9em;
+}
+
+/* ---FIN SECCIÓN DE COMPARATIVAS --- */
+/* Estilo base para dar margen y separación entre secciones */
+section {
+    padding: 35px 25px;
+    margin-bottom: 25px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+}
+
+/* Variación suave por sección */
+#muestras {
+    background-color: #f8fafc;
+}
+
+#especialidades {
+    background-color: #f1f5f9;
+}
+
+#tarifas {
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0;
+}
+
+#cotizacion-rapida {
+    background-color: #f0f9ff;
+    text-align: center;
+}
+
+#testimonios {
+    background-color: #faf5ff; /* Toque suave violeta claro para destacar */
+}
+
+#contacto {
+    background-color: #f8fafc;
+}
+
+/* --- BANDA DESLIZANTE DE TEXTO (LENTA E ÍNDICE) --- */
+.cinta-deslizante {
+    background-color: #1a365d; /* Azul oscuro corporativo */
+    color: #ffffff;
+    padding: 12px 0;
+    overflow: hidden;
+    white-space: nowrap;
+    border-radius: 8px;
+    margin-bottom: 25px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.texto-deslizante {
+    display: inline-block;
+    padding-left: 100%;
+    /* Aumentamos a 35s para que el texto fluya despacio y sin prisa */
+    animation: deslizar 35s linear infinite; 
+    font-weight: 500;
+    font-size: 0.95em;
+    letter-spacing: 0.3px;
+}
+
+.texto-deslizante span {
+    color: #38bdf8; /* Azul claro brillante para resaltar secciones */
+    font-weight: bold;
+}
+
+/* Animación continua hacia la izquierda */
+@keyframes deslizar {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(-100%, 0);
+    }
 }
