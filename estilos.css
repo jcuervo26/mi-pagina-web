@@ -505,3 +505,57 @@ section {
 .acciones-pdf-stack {
     text-align: center;
 }
+/* --- COMPARATIVA DE TRANSCRIPCIÓN --- */
+.seccion-comparativa {
+    margin: 40px 0;
+    text-align: center;
+}
+
+.subtitulo-muestra {
+    color: #64748b;
+    margin-bottom: 25px;
+}
+
+.contenedor-comparativa {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap; /* Para que en teléfonos se ponga una debajo de la otra */
+}
+
+.caja-muestra {
+    flex: 1;
+    min-width: 280px;
+    max-width: 500px;
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.etiqueta-estado {
+    display: inline-block;
+    padding: 4px 12px;
+    font-size: 0.85em;
+    font-weight: bold;
+    border-radius: 20px;
+    margin-bottom: 12px;
+}
+
+.borrador {
+    background-color: #fef3c7;
+    color: #92400e;
+}
+
+.latex {
+    background-color: #dbeafe;
+    color: #1e40af;
+}
+
+.img-muestra {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+    border: 1px solid #cbd5e1;
+}
